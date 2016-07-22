@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+
+/*---------------------------------*/
+/*CUSTOM 12 COLUMN GRID SYSTEM*/
+/*---------------------------------*/
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 22.75%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+/*---------------------------------*/
+/*MEDIA QUERIE*/
+/*---------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+  .chart-desc{
+    text-align: center;
+  }
+
+  .table-stat{
+    margin-left: 200px;
+  }
+}
+
+/*---------------------------------*/
+/*HEADER*/
+/*---------------------------------*/
+
+#context{
+  background-color: #e74c3c;
+  padding: 10px;
+}
+
+#context h1{
+ font-size: 20px;
+ font-weight: 300;
+ color: #ecf0f1;
+}
+
+#info{
+  background-color: #F2F2F2;
+  padding: 10px;
+  border-bottom: 1px solid dimgray;
+}
+
+#info h5{
+   color: #7f8c8d;
+   font-size: 20px;
+   font-weight: 300;
+}
+
+
+p{
+  font-weight: 300;
+}
+
+.data-stat{
+  margin: 40px 30px;
+}
+
+
+/*---------------------------------*/
+/*TABLE*/
+/*---------------------------------*/
+
+table {
+ margin-top: 10px;
+}
+
+.revenue{
+
+  padding: 10px;
+}
+
+tr {
+   background-color: #F2F2F2;
+}
+
+td{
+  font-weight: 300;
+}
+
+th{
+  font-weight: 400;
+}
+
+th,td{
+  padding: 10px;
+}
+
+.chart-desc{
+  text-align: center;
+}
+
+.table-head{
+  background-color: #ECF0F1;
+}
+
+/*---------------------------------*/
+/*LISTING*/
+/*---------------------------------*/
+
+.listing{
+
+  padding: 45px;
+}
+
+ .container{
+   margin: 80px;
+ }
+
+.product-list{
+  border: 1px solid black;
+  padding: 20px;
+  margin: 70px 8px 10px 16px;
+
+}
+
+.responsive-image{
+  width:auto;
+  height: 250px;
+}
+ .prod-desc{
+   font-weight: 400;
+   color: #7f8c8d;
+ }
+
+ .prod-views{
+   font-size: 12px;
+   color: #7f8c8d;
+   border-bottom: 1px solid  #7f8c8d;
+   margin-bottom: 15px;
+   padding-bottom: 8px;
+ }
+ul li{
+  list-style: none;
+  line-height: 25px;
+  color: #7f8c8d;
+}
+
+ .demo{
+   float: right;
+   line-height: 25px;
+   list-style: none;
+   color: #000000;
+ }
+.listing-title{
+  margin-left: 20px;
+  margin-bottom: 1px;
+  border-bottom:1px solid #e67e22;
+}
